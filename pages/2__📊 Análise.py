@@ -112,11 +112,11 @@ if st.sidebar.checkbox("📝**Dados Estatísticos**", False, key=2):
     st.markdown("👫**Total por sexo com câncer de mama:**")
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.error(f"**Feminino: {female_count}**")
+        st.metric(label="Feminino:", value=female_count)
     with col2:
-        st.error(f"**Masculino:{male_count}**")
+        st.metric(label="Masculino:", value=male_count)
     with col3:
-        st.error(f"**Total de Pacientes: {male_count+female_count}**")    
+        st.metric(label="Total de Pacientes:", value=male_count+female_count)    
     st.divider()
 
     #Contagem de Status de emergencia, RP e HER2 #######################3
