@@ -112,11 +112,11 @@ if st.sidebar.checkbox("📝**Dados Estatísticos**", False, key=2):
     st.markdown("👫**Total por sexo com câncer de mama:**")
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric(label="Feminino:", value=female_count)
+        st.metric(label="Feminino:", value= female_count)
     with col2:
-        st.metric(label="Masculino:", value=male_count)
+       st.metric(label="Masculino:", value= male_count)
     with col3:
-        st.metric(label="Total de Pacientes:", value=male_count+female_count)    
+        st.metric(label="Total de Pacientes:", value = male_count+female_count)    
     st.divider()
 
     #Contagem de Status de emergencia, RP e HER2 #######################3
@@ -369,7 +369,7 @@ if st.sidebar.checkbox("🎯**Previsões**", False, key=4):
 
     
     st.divider()
-    st.info("📌**Com base nos resultados apresentados nos índices dos exames antes de uma cirurgia, o médico pode tomar a decisão sobre realizar ou não o procedimento cirúrgico. A inteligência artificial contribui de forma a prever riscos na saúde dos pacientes analisados nessa base dados obtida no Kaggle.com.**")
+    st.info("📌**Com base nos resultados apresentados nos índices dos exames antes de uma cirurgia, o médico pode tomar a decisão sobre realizar ou não o procedimento cirúrgico. Com base nos dados analisados e obtidos no [Kaggle.com], a inteligência Artificial contribui de forma a prever os riscos na saúde dos pacientes.**")
 
  
 
