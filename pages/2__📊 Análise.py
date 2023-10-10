@@ -105,6 +105,7 @@ if st.sidebar.checkbox("🎲**Mostrar Dataset**", False, key=1):
 
 ############### Mostrar dados estatisticos ################################################
 if st.sidebar.checkbox("📝**Dados Estatísticos**", False, key=2):
+    st.subheader("🔎 Análise estatísticas dos pacientes:", divider='rainbow')
     #Contagem por sexo
     male_count = df[df.Sexo == "MALE"].Sexo.count()
     female_count = df[df.Sexo == "FEMALE"].Sexo.count()
@@ -214,6 +215,7 @@ if st.sidebar.checkbox("📊**Gráficos**", False, key=3):
 #################### Mostrar Previsões ###################################################################
 
 if st.sidebar.checkbox("🎯**Previsões**", False, key=4):
+    st.subheader("🎯 Previsões utilizando IA:", divider='rainbow')
     st.error("📌**Com base no Dataset iremos prever e demonstrar os resultados abaixo:**")
 
     #quantidade de pacientes que sobreviveram e não sobreviveram após a cirurgia

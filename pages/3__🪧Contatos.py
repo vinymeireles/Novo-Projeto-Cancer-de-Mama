@@ -26,8 +26,10 @@ with col3:
 with col4:
     st.image("icons/linkedin.png",caption= "/pviniciusmeireles", width=90)
 
-st.markdown("**Para desenvolvimento de novos projetos - Dashboard utilizando Inteligência Articial: Machine Learning**")
+st.markdown("")
 st.subheader("", divider='green')
+st.markdown("**Para desenvolvimento de novos projetos - Dashboard utilizando Inteligência Articial: Machine Learning**")
+
 st.markdown("")
 
 col1, col2, col3 = st.columns(3)
